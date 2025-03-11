@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './header.jsx';
 import Footer from './footer.jsx';
 import Login from './login.jsx';
-import Signin from './signin.jsx';
+import Signup from './signup.jsx';
 function App() {
     return (
       <Router>
@@ -14,7 +14,7 @@ function App() {
           <br/><br/><br/><br /><br /><br /><br />
           <Routes>
             <Route path="/" element={<Login/>}></Route>
-            <Route path="/signinpage.jsx" element={<Signin/>}></Route>
+            <Route path="/signuppage.jsx" element={<Signup/>}></Route>
           </Routes>
           <Footer />
       </div>

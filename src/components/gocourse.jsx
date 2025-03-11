@@ -140,7 +140,22 @@ default:
         </div>
 
         <div style={moduleStyle}>
-          <h2 style={headingStyle}>Module 8: Conclusion</h2>
+        <h2 style={headingStyle}>Module 8: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/un6ZyFkqFKo"
+              title="HTML Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div style={moduleStyle}>
+          <h2 style={headingStyle}>Module 9: Conclusion</h2>
           <p>Congratulations! You've completed the Go beginner course.</p>
         </div>
       </div>

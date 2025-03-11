@@ -135,7 +135,22 @@ print(format(date, "%A, %B %d, %Y"))`}</pre>
         </div>
         
         <div style={moduleStyle}>
-          <h2 style={headingStyle}>Module 10: Conclusion</h2>
+        <h2 style={headingStyle}>Module 10: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/_V8eKsto3Ug"
+              title="HTML Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div style={moduleStyle}>
+          <h2 style={headingStyle}>Module 11: Conclusion</h2>
           <p>You've completed the R beginner course. Keep practicing and exploring!</p>
         </div>
       </div>

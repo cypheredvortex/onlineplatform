@@ -18,7 +18,7 @@ function CssCourse() {
     borderRadius: "12px",
     boxShadow: "0 6px 12px rgba(0,0,0,0.15)",
     lineHeight: "1.6",
-    marginBottom: "100px",  // Added space between content and footer
+    marginBottom: "100px",  
   };
 
   const headingStyle = {
@@ -338,14 +338,27 @@ div {
 }`}
           </pre>
         </div>
-
         <div style={moduleStyle}>
-          <h2 style={headingStyle}>Module 9: Best Practices and Conclusion</h2>
-          <h3>9.1 Writing Clean and Efficient CSS</h3>
+        <h2 style={headingStyle}>Module 9: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/wRNinF7YQqQ"
+              title="CSS Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+        <div style={moduleStyle}>
+          <h2 style={headingStyle}>Module 10: Best Practices and Conclusion</h2>
+          <h3>10.1 Writing Clean and Efficient CSS</h3>
           <p>Use descriptive class names and avoid inline styles.</p>
           <p>Minimize redundancy by using reusable classes.</p>
 
-          <h3>9.2 Conclusion</h3>
+          <h3>10.2 Conclusion</h3>
           <p>Now you have the basic understanding of CSS! Keep practicing and experimenting with styles to master CSS.</p>
         </div>
       </div>

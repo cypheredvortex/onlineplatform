@@ -6,7 +6,6 @@ const CourseForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // API call to save course
     console.log({ title, videoURL });
   };
 

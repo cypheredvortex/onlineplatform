@@ -5,6 +5,8 @@ import Header from "./header.jsx";
 import Footer from "./footer.jsx";
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Htmlco from "./htmlco.jsx";
+import Navbar from "./navbar.jsx";
+
 function App() {
   return (
     <Router>

@@ -20,7 +20,7 @@ function SwiftCourse() {
     borderRadius: "12px",
     boxShadow: "0 6px 12px rgba(0,0,0,0.15)",
     lineHeight: "1.6",
-    marginBottom: "100px",  // Added space between content and footer
+    marginBottom: "100px",  
   };
 
   const headingStyle = {
@@ -242,7 +242,22 @@ do {
         </div>
 
         <div style={moduleStyle}>
-          <h2 style={headingStyle}>Module 9: Conclusion</h2>
+        <h2 style={headingStyle}>Module 9: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8Xg7E9shq0U?start=4s"
+              title="HTML Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div style={moduleStyle}>
+          <h2 style={headingStyle}>Module 10: Conclusion</h2>
           <p>Congratulations! You have completed the Swift beginner course. Now you can start building iOS apps and use Swift for various development tasks. Keep practicing and exploring more advanced topics like concurrency, design patterns, and SwiftUI.</p>
         </div>
 

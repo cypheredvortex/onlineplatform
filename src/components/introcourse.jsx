@@ -1,6 +1,6 @@
 import Card from "./card";
 import { Link } from "react-router-dom";
-import './App.css'; // Assuming you have a separate CSS file for this component
+import './App.css'; 
 
 function Introcourse() {
     return (
@@ -9,7 +9,7 @@ function Introcourse() {
             <div className="courses-container">
                 <Link to="/jscourse"><Card title="JavaScript" src="images/jspic.jpg"/></Link>
                 <Link to="/pycourse"><Card title="Python" src="images/pypic.jpeg"/></Link>
-                <Link to=""><Card title="Java" src="./images/javapic.jpg" /></Link>
+                <Link to="/javacourse"><Card title="Java" src="./images/javapic.jpg" /></Link>
             </div>
         </div>
     );

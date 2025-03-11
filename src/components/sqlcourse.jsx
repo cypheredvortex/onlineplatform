@@ -20,7 +20,7 @@ function SqlCourse() {
     borderRadius: "12px",
     boxShadow: "0 6px 12px rgba(0,0,0,0.15)",
     lineHeight: "1.6",
-    marginBottom: "100px",  // Added space between content and footer
+    marginBottom: "100px", 
   };
 
   const headingStyle = {
@@ -249,6 +249,21 @@ JOIN orders ON users.id = orders.user_id;`}
 
           <h3>9.2 Optimizing Joins</h3>
           <p>Optimize your queries by using the correct join type (INNER JOIN, LEFT JOIN, etc.) based on your data needs.</p>
+        </div>
+
+        <div style={moduleStyle}>
+        <h2 style={headingStyle}>Module 10: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/7S_tz1z_5bA"
+              title="HTML Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
         <footer style={{ textAlign: "center", padding: "15px 0", backgroundColor: "#ddd", borderRadius: "8px" }}>

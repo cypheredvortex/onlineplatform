@@ -1,35 +1,70 @@
-import './App.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate, Link } from "react-router-dom"; 
 
-function Login() {
-    // You might want to add state and event handling if you plan to handle form submission in React.
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Add your login logic here.
-    };
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false); 
+  const navigate = useNavigate(); 
 
-    return (
-        <div className="">
-            <br /><br />
-            <fieldset className="fieldintel">
-                <legend style={{ color: "aqua", fontSize: "xx-large" }}>Log in</legend>
-                <form onSubmit={handleSubmit}>
-                    <label htmlFor="username">Username:</label><br /><br />
-                    <input type="text" id="username" placeholder="Enter your username" required /><br /><br />
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setLoading(true); 
+    try {
+      const response = await axios.post("http://localhost:5000/login", {
+        email,
+        password,
+      });
 
-                    <label htmlFor="email">E-mail:</label><br /><br />
-                    <input type="email" id="email" placeholder="Enter your email" required /><br /><br />
+      localStorage.setItem("token", response.data.token);
 
-                    <label htmlFor="password">Password:</label><br /><br />
-                    <input type="password" id="password" placeholder="Enter your password" required /><br /><br /><br />
+      navigate("/coursespage");
+    } catch (err) {
+      setError("Invalid credentials, please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
-                    <button type="submit" style={{ color: "black" }}>Log in</button><br /><br /><br />
-                </form>
+  return (
+    <div className="">
+      <br /><br />
+      <fieldset className="fieldintel">
+        <legend style={{ color: "aqua", fontSize: "xx-large" }}>Log in</legend>
+        <form onSubmit={handleLogin}> 
+          <label htmlFor="email">E-mail:</label><br /><br />
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            required
+          /><br /><br />
 
-                <Link to="/signinpage">Sign in</Link><br /><br /><br />
-            </fieldset>
-        </div>
-    );
+          <label htmlFor="password">Password:</label><br /><br />
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter your password"
+            required
+          /><br /><br /><br />
+
+          <button type="submit" style={{ color: "black" }} disabled={loading}>
+            {loading ? 'Logging in...' : 'Log in'}
+          </button><br /><br /><br />
+        </form>
+
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+
+        <Link to="/signuppage" style={{ color: "aqua" }}>Sign up</Link><br /><br /><br />
+      </fieldset>
+    </div>
+  );
 }
 
 export default Login;

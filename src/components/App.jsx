@@ -11,7 +11,7 @@ import Calltoaction from "./calltoaction.jsx";
 import Courses from "./courses.jsx";
 import Exams from "./exams.jsx";
 import Login from "./login.jsx";
-import Signin from "./signin.jsx";
+import Signup from "./signup.jsx";
 import Html from "./htmlcourse.jsx"; 
 import Csscourse from "./csscourse.jsx";
 import JsCourse from "./jscourse.jsx";
@@ -27,6 +27,22 @@ import PythonCourse from "./pycourse.jsx";
 import PhpCourse from "./phpcourse.jsx";
 import SwiftCourse from "./swiftcourse.jsx";
 import GoCourse from "./gocourse.jsx";
+import HtmlQuiz from "./htmltest.jsx";
+import CssQuiz from "./csstest.jsx";
+import JsQuiz from "./jstest.jsx";
+import PhpQuiz from "./phptest.jsx";
+import SqlQuiz from "./sqltest.jsx";
+import PyQuiz from "./pytest.jsx";
+import CQuiz from "./ctest.jsx";
+import CshQuiz from "./cshtest.jsx";
+import CppQuiz from "./cpptest.jsx";
+import TypeScriptQuiz from "./tstest.jsx";
+import RubyQuiz from "./rubytest.jsx";
+import SwiftQuiz from "./swifttest.jsx";
+import GoQuiz from "./gotest.jsx";
+import RQuiz from "./rtest.jsx";
+import KotlinQuiz from "./kotlintest.jsx";
+import JavaCourse from "./javacourse.jsx";
 
 const Notfound=()=><h2>The page you are looking for does not exist!</h2>
  
@@ -44,7 +60,7 @@ function App() {
       <Route path="/coursespage" element={<Courses/>}/>
       <Route path="/examspage" element={<Exams/>}/>
       <Route path="/loginpage" element={<Login/>}/>
-      <Route path="/signinpage" element={<Signin/>}/>
+      <Route path="/signuppage" element={<Signup/>}/>
       <Route path="/htmlcourse" element={<Html />} />
       <Route path="/csscourse" element={<Csscourse />} />
       <Route path="/jscourse" element={<JsCourse />} />
@@ -60,6 +76,22 @@ function App() {
       <Route path="/phpcourse" element={<PhpCourse />} />
       <Route path="/tscourse" element={<TypeScriptCourse />} />
       <Route path="/cppcourse" element={<CppCourse />} />
+      <Route path="/htmltest" element={<HtmlQuiz />} />
+      <Route path="/csstest" element={<CssQuiz />} />
+      <Route path="/jstest" element={<JsQuiz />} />
+      <Route path="/phptest" element={<PhpQuiz />} />
+      <Route path="/sqltest" element={<SqlQuiz />} />
+      <Route path="/pytest" element={<PyQuiz />} />
+      <Route path="/ctest" element={<CQuiz />} />
+      <Route path="/cshtest" element={<CshQuiz />} />
+      <Route path="/cpptest" element={<CppQuiz />} />
+      <Route path="/tstest" element={<TypeScriptQuiz />} />
+      <Route path="/rubytest" element={<RubyQuiz />} />
+      <Route path="/swifttest" element={<SwiftQuiz />} />
+      <Route path="/gotest" element={<GoQuiz />} />
+      <Route path="/rtest" element={<RQuiz />} />
+      <Route path="/kotlintest" element={<KotlinQuiz />} />
+      <Route path="/javacourse" element={<JavaCourse />} />
       </Routes>
       <Routes>
       <Route path="/:page" component={Page} />

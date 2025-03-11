@@ -235,7 +235,22 @@ file << "Hello, C++ file!" << endl;`}</pre>
         </div>
 
         <div style={moduleStyle}>
-          <h2 style={headingStyle}>Module 11: Conclusion</h2>
+        <h2 style={headingStyle}>Module 11: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-TkoO8Z07hI"
+              title="HTML Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div style={moduleStyle}>
+          <h2 style={headingStyle}>Module 12: Conclusion</h2>
           <p>Congratulations! You have now learned the fundamentals of C++ programming. Continue exploring advanced topics such as dynamic memory allocation, templates, and the Standard Template Library (STL).</p>
         </div>
       </div>

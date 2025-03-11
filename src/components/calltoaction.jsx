@@ -1,4 +1,4 @@
-import './App.css'; // Create a separate CSS file for this component
+import './App.css'; 
 
 function Calltoaction() {
     return (

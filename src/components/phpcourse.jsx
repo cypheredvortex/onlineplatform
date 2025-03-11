@@ -20,7 +20,7 @@ function PhpCourse() {
     borderRadius: "12px",
     boxShadow: "0 6px 12px rgba(0,0,0,0.15)",
     lineHeight: "1.6",
-    marginBottom: "100px",  // Added space between content and footer
+    marginBottom: "100px",  
   };
 
   const headingStyle = {
@@ -237,6 +237,20 @@ if ($conn->connect_error) {
           <p>You can execute SQL queries in PHP:</p>
           <pre style={codeStyle}>{`$sql = "SELECT * FROM users";
 $result = $conn->query($sql);`}</pre>
+        </div>
+        <div style={moduleStyle}>
+        <h2 style={headingStyle}>Module 9: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/zZ6vybT1HQs"
+              title="CSS Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
         <footer style={{ textAlign: "center", padding: "15px 0", backgroundColor: "#ddd", borderRadius: "8px" }}>

@@ -123,6 +123,21 @@ fun main() = runBlocking {
           </pre>
         </div>
 
+        <div style={moduleStyle}>
+        <h2 style={headingStyle}>Module 8: Summary Video</h2>
+        <div style={{ textAlign: "center", marginTop: "15px" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/EExSSotojVI?start=8s"
+              title="HTML Crash Course"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
         <footer style={{ textAlign: "center", padding: "15px 0", backgroundColor: "#ddd", borderRadius: "8px" }}>
           <p>© 2025 Kotlin Course</p>
         </footer>
